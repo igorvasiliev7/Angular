@@ -1,0 +1,19 @@
+<h3>Home works</h3>
+<h3>Hello {{name}}</h3>
+
+<h3 *ngFor="let elem of names">Hello {{elem}}</h3>
+
+<button class="btn btn-success" (click)="show()">Home</button>
+<button class="btn btn-success" (click)="test()">Alex</button>
+
+
+<div class="container">
+  <br>
+  <form>
+    <input title="fewfw" type="text"  class="form-control">
+  </form>
+  <br>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let elem of names">{{elem}}</li>
+  </ul>
+</div>
