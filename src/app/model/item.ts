@@ -1,8 +1,8 @@
-export class Product {
+export class Item {
   id: number;
   type: string;
   marking: string;
-  category: number;
+  category: string;
   brand: string;
   outerDiameter: number;
   innerDiameter: number;
@@ -14,4 +14,3 @@ export class Product {
   photoFour: string;
   info: string;
 }
-

@@ -9,13 +9,17 @@ import { UserComponent } from './user/user.component';
 import {UserService} from "./service/user.service";
 import {ProductService} from "./service/product.service";
 import {HttpClientModule} from "@angular/common/http";
+import { ItemComponent } from './item/item.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NewCompComponent,
-    UserComponent
+    UserComponent,
+    ItemComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +30,6 @@ import {HttpClientModule} from "@angular/common/http";
     UserService,
     ProductService
   ],
-  bootstrap: [AppComponent, NewCompComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
