@@ -1,0 +1,11 @@
+<p>
+  user works!
+</p>
+
+<div align="center" *ngIf="users">
+  <h3 *ngFor="let user of users">{{user.name}}</h3>
+</div>
+
+<div align="center" *ngIf="products">
+  <h3 *ngFor="let p of products">brand: {{p.brand}} marking {{p.marking}} price {{p.price}}</h3>
+</div>
