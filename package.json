@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gen2": "ng generate component"
+    "gen": "ng generate component"
   },
   "private": true,
   "dependencies": {

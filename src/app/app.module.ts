@@ -11,6 +11,8 @@ import {ProductService} from "./service/product.service";
 import {HttpClientModule} from "@angular/common/http";
 import { ItemComponent } from './item/item.component';
 import { CategoryComponent } from './category/category.component';
+import {CategoryService} from "./service/category.service";
+import {ItemService} from "./service/item.service";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { CategoryComponent } from './category/category.component';
   ],
   providers: [
     UserService,
-    ProductService
+    ProductService,
+    ItemService,
+    CategoryService
   ],
   bootstrap: [AppComponent]
 })

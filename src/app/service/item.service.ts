@@ -1,18 +1,17 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/index";
 import {HttpClient} from "@angular/common/http";
-import {Category} from "../model/category";
-
+import {Item} from "../model/item";
 
 const API: string = "https://api.mpp.net.ua/api";
 
 @Injectable()
-export class CategoryService {
+export class ItemService {
 
   constructor(private http: HttpClient) {
   }
 
-  public findCategories(lg: string): Observable<Category> {
-    return this.http.get<Category>(`${API}/categories/findAll?language=${lg}`);
+  public findOne(id:number, lg: string): Item {
+    return this.http.get<Item>(`${API}/products/findOne/${id}/${lg}`);
   }
 }
