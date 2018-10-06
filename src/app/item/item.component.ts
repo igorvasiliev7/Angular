@@ -9,12 +9,12 @@ import {Item} from "../model/item";
 })
 export class ItemComponent implements OnInit {
 
-  item:Item;
+  items:Item[];
 
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
-    this.item=this.itemService.findOne(74,"ua");
+    this.items=this.itemService.findOne(74,"ua");
 
 }
 }

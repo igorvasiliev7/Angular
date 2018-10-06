@@ -1,3 +1,21 @@
 <p>
-  item works!
+<h1 align="center"> Item service</h1>
 </p>
+<div>
+  <h2 *ngFor="let i of items">
+    id: {{i.id}};
+    type: {{i.type}};
+    marking: {{i.marking}};
+    category: {{i.category}};
+    brand: {{i.brand}};
+    outerDiameter: {{i.outerDiameter}};
+    innerDiameter: {{i.innerDiameter}};
+    height: {{i.height}};
+    price: {{i.price}};
+    photoOne: {{i.photoOne}};
+    photoTwo: {{i.photoTwo}};
+    photoThree: {{i.photoThree}};
+    photoFour: {{i.photoFour}};
+    info: {{i.info}};
+  </h2>
+</div>
