@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ItemService} from "../service/item.service";
-import {Item} from "../model/item";
+import {ItemService} from '../service/item.service';
+import {Item} from '../model/item';
+import {Observable} from 'rxjs/index';
 
 @Component({
   selector: 'app-item',
@@ -9,12 +10,13 @@ import {Item} from "../model/item";
 })
 export class ItemComponent implements OnInit {
 
-  items:Item[];
+  item: Observable<Item>;
 
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
-    this.items=this.itemService.findOne(74,"ua");
+    this.item = this.itemService.findOne(74, 'ua');
+    console.log(this.item);
 
 }
 }

@@ -1,9 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {UserService} from "../service/user.service";
-import {User} from "../model/user";
-import {ProductService} from "../service/product.service";
-import {ProductDTO} from "../dto/product.dto";
-import {Product} from "../model/product";
+import {UserService} from '../service/user.service';
+import {User} from '../model/user';
+import {ProductService} from '../service/product.service';
+import {ProductDTO} from '../dto/product.dto';
+import {Product} from '../model/product';
 
 @Component({
   selector: 'app-user',

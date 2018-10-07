@@ -1,21 +1,20 @@
-<p>
-<h1 align="center"> Item service</h1>
-</p>
+<
+<h1 align="center"> Hello from Item service</h1>
 <div>
-  <h2 *ngFor="let i of items">
-    id: {{i.id}};
-    type: {{i.type}};
-    marking: {{i.marking}};
-    category: {{i.category}};
-    brand: {{i.brand}};
-    outerDiameter: {{i.outerDiameter}};
-    innerDiameter: {{i.innerDiameter}};
-    height: {{i.height}};
-    price: {{i.price}};
-    photoOne: {{i.photoOne}};
-    photoTwo: {{i.photoTwo}};
-    photoThree: {{i.photoThree}};
-    photoFour: {{i.photoFour}};
-    info: {{i.info}};
+  <h2 *ngIf="item">
+    id: {{item.id}};<br/>
+    type: {{item.type}};<br/>
+    marking: {{item.marking}};<br/>
+    category: {{item.category}};<br/>
+    brand: {{item.brand}};<br/>
+    outerDiameter: {{item.outerDiameter}};<br/>
+    innerDiameter: {{item.innerDiameter}};<br/>
+    height: {{item.height}};<br/>
+    price: {{item.price}};<br/>
+    photoOne: {{item.photoOne}};<br/>
+    photoTwo: {{item.photoTwo}};<br/>
+    photoThree: {{item.photoThree}};<br/>
+    photoFour: {{item.photoFour}};<br/>
+    info: {{item.info}};<br/>
   </h2>
 </div>

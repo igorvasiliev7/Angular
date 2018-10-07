@@ -1,10 +1,10 @@
 
-import {Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs/index";
-import {ProductDTO} from "../dto/product.dto";
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs/index';
+import {ProductDTO} from '../dto/product.dto';
 
-const API: string = "https://api.mpp.net.ua/api";
+const API = 'https://api.mpp.net.ua/api';
 
 @Injectable()
 export class ProductService {
