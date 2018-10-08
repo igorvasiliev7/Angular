@@ -15,8 +15,7 @@ export class ItemComponent implements OnInit {
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
-    this.item = this.itemService.findOne(74, 'ua');
-    console.log(this.item);
+    this.itemService.findOne(74, 'ua').subscribe((s: Item) => this.item = s);
 
 }
 }

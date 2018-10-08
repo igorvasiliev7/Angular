@@ -13,7 +13,7 @@ export class CategoryService {
   constructor(private http: HttpClient) {
   }
 
-  public findCategories(lg: string): Observable<Category[]> {
-    return this.http.get<Category[]>(`${API}/categories/findAll?language=${lg}`);
+  public findCategories(lg: string): Observable<Category> {
+    return this.http.get<Category>(`${API}/categories/findAll?language=${lg}`);
   }
 }
