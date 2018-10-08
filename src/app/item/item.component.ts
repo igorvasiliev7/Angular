@@ -10,7 +10,7 @@ import {Observable} from 'rxjs/index';
 })
 export class ItemComponent implements OnInit {
 
-  item: Observable<Item>;
+  item: Item;
 
   constructor(private itemService: ItemService) { }
 
