@@ -4,7 +4,6 @@ import {HttpClient} from '@angular/common/http';
 import {CategoryDTO} from '../dto/categoryDTO';
 import {Category} from '../model/category';
 
-
 const API = 'https://api.mpp.net.ua/api';
 
 @Injectable()

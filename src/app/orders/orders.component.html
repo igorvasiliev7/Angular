@@ -1,0 +1,29 @@
+<p align="center">
+  Hello from categories
+</p>
+
+<div class="table-responsive">
+  <table class="table table-dark" *ngIf="orders">
+    <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">Address</th>
+      <th scope="col">User</th>
+    </tr>
+    </thead>
+    <tbody >
+    <tr *ngFor="let order of orders">
+      <th >{{order.id}}</th>
+      <td>{{order.orderName}}</td>
+      <td>{{order.address}}</td>
+      <td>{{order.username}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="pagination-container" *ngIf="totalCount>12">
+    <div align="center">
+      <pagination-controls (pageChange)="changePage($event)" [maxSize]="6"></pagination-controls>
+    </div>
+  </div>
+</div>
