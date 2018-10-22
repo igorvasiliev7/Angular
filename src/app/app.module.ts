@@ -13,6 +13,7 @@ import {CategoryService} from './service/category.service';
 import {ItemService} from './service/item.service';
 import {NgxPaginationModule} from "ngx-pagination";
 import { OrdersComponent } from './orders/orders.component';
+import {AppRoitingModule} from "./app.route";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OrdersComponent } from './orders/orders.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AppRoitingModule
   ],
   providers: [
     UserService,

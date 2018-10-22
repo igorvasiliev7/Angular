@@ -14,7 +14,7 @@ export class OrdersComponent implements OnInit {
 
   orders: Order[];
   totalCount: number;
-  currentPage: number;
+  currentPage: number = 0;
 
   constructor(private orderService: OrderService) { }
 
@@ -23,9 +23,8 @@ export class OrdersComponent implements OnInit {
   }
 
   changePage(page:number) {
-    console.log(page);
-    // this.currentPage = page;
-    // this.findAll((page - 1));
+    this.currentPage = page;
+    this.findAll((page - 1));
   }
 
   private findAll(page: number) {

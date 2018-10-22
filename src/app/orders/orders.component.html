@@ -2,6 +2,9 @@
   Hello from categories
 </p>
 
+<button [routerLink]="['items']" class="btn btn-success">Items</button>
+<a [routerLink]="['categories']" class="btn btn-success">Categories</a>
+
 <div class="table-responsive">
   <table class="table table-dark" *ngIf="orders">
     <thead>
@@ -13,7 +16,7 @@
     </tr>
     </thead>
     <tbody >
-    <tr *ngFor="let order of orders">
+    <tr *ngFor="let order of orders | paginate: {itemsPerPage: 12, currentPage: currentPage, totalItems: totalCount}">
       <th >{{order.id}}</th>
       <td>{{order.orderName}}</td>
       <td>{{order.address}}</td>
